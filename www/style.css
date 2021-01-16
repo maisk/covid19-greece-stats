@@ -1,0 +1,14 @@
+img.plots {
+    border:1px solid gray;
+    height: 420px;
+    margin-bottom: 20px;
+}
+
+div.page_plots {
+    margin-left: 10px;
+}
+
+h2 {
+    margin-top: 5px;
+     margin-bottom: 5px;
+}

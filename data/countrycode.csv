@@ -1,0 +1,223 @@
+country,code,continent,population
+Afghanistan,AFG,Asia,38928000
+Albania,ALB,Europe,2878000
+Algeria,DZA,Africa,43851000
+American Samoa,ASM,Oceania,55000000
+Andorra,AND,Europe,77000000
+Angola,AGO,Africa,32866000
+Anguilla,AIA,North America,15000000
+Antigua and Barbuda,ATG,North America,98000000
+Argentina,ARG,South America,45196000
+Armenia,ARM,Europe,2963000
+Aruba,ABW,North America,107000000
+Australia,AUS,Oceania,25500000
+Austria,AUT,Europe,9006000
+Azerbaijan,AZE,Europe,10139000
+Bahamas,BHM,South America,393000000
+Bahrain,BHR,Asia,1702000
+Bangladesh,BGD,Asia,164689000
+Barbados,BRB,North America,287000000
+Belarus,BLR,Europe,9449000
+Belgium,BEL,Europe,11590000
+Belize,BLZ,North America,398000000
+Benin,BEN,Africa,12123000
+Bermuda,BMU,North America,62000000
+Bhutan,BTN,Asia,772000000
+Bolivia,BOL,South America,11350000
+Bosnia and Herzegovina,BIH,Europe,3281000
+Botswana,BWA,Africa,2352000
+Brazil,BRA,South America,212559000
+British Virgin Islands,VGB,North America,30000000
+Brunei,BRN,Asia,437000000
+Bulgaria,BGR,Europe,6948000
+Burkina Faso,BFA,Africa,20903000
+Burma,MMR,Asia,53710000
+Burundi,BDI,Africa,11891000
+Cabo Verde,CPV,Africa,556000000
+Cambodia,KHM,Asia,16719000
+Cameroon,CMR,Africa,26546000
+Canada,CAN,North America,37742000
+Cayman Islands,CYM,North America,66000000
+Central African Republic,CAF,Africa,4830000
+Chad,TCD,Africa,16426000
+Chile,CHL,South America,19116000
+China,CHN,Asia,1439324000
+Colombia,COL,South America,50883000
+Comoros,COM,Africa,870000000
+Congo (Kinshasa),COD,Africa,89561000
+Congo (Brazzaville),COG,Africa,5518000
+Cook Islands,COK,Oceania,18000000
+Costa Rica,CRI,North America,5094000
+Cote d'Ivoire,CIV,Africa,26378000
+Croatia,HRV,Europe,4105000
+Cuba,CUB,North America,11327000
+Curacao,CUW,North America,164000000
+Cyprus,CYP,Europe,1207000
+Czechia,CZE,Europe,10709000
+Denmark,DNK,Europe,5792000
+Djibouti,DJI,Africa,988000000
+Dominica,DMA,North America,72000000
+Dominican Republic,DOM,North America,10848000
+Ecuador,ECU,South America,17643000
+Egypt,EGY,Africa,102334000
+El Salvador,SLV,North America,6486000
+Equatorial Guinea,GNQ,Africa,1403000
+Eritrea,ERI,Africa,3546000
+Estonia,EST,Europe,1327000
+Ethiopia,ETH,Africa,114964000
+Falkland Islands (Islas Malvinas),FLK,South America,3000000
+Faroe Islands,FRO,Europe,49000000
+Fiji,FJI,Oceania,896000000
+Finland,FIN,Europe,5541000
+France,FRA,Europe,65274000
+French Polynesia,PYF,Oceania,281000000
+Gabon,GAB,Africa,2226000
+Gambia,GMB,Africa,2417000
+Georgia,GEO,Europe,3989000
+Germany,DEU,Europe,83784000
+Ghana,GHA,Africa,31073000
+Gibraltar,GIB,Europe,34000000
+Greece,GRC,Europe,10423000
+Greenland,GRL,North America,57000000
+Grenada,GRD,North America,113000000
+Guam,GUM,Oceania,169000000
+Guatemala,GTM,North America,17916000
+Guernsey,GGY,Europe,63026
+Guinea-Bissau,GNB,Africa,1968000
+Guinea,GIN,Africa,13133000
+Guyana,GUY,South America,787000000
+Haiti,HTI,North America,11403000
+Honduras,HND,North America,9905000
+Hong Kong,HKG,Asia,7497000
+Hungary,HUN,Europe,9660000
+Iceland,ISL,Europe,341000000
+India,IND,Asia,1380004000
+Indonesia,IDN,Asia,273524000
+Iran,IRN,Asia,83993000
+Iraq,IRQ,Asia,40223000
+Ireland,IRL,Europe,4938000
+Isle of Man,IMN,Europe,85000000
+Israel,ISR,Asia,8656000
+Italy,ITA,Europe,60462000
+Jamaica,JAM,North America,2961000
+Japan,JPN,Asia,126476000
+Jersey,JEY,Europe,97857
+Jordan,JOR,Asia,10203000
+Kazakhstan,KAZ,Europe,18777000
+Kenya,KEN,Africa,53771000
+Kiribati,KIR,Oceania,119000000
+"Korea, North",KOR,Asia,25779000
+"Korea, South",PRK,Asia,51269000
+Kosovo,KSV,Europe,1845000
+Kuwait,KWT,Asia,4271000
+Kyrgyzstan,KGZ,Asia,6524000
+Laos,LAO,Asia,7062000
+Latvia,LVA,Europe,1886000
+Lebanon,LBN,Asia,6825000
+Lesotho,LSO,Africa,2142000
+Liberia,LBR,Africa,5058000
+Libya,LBY,Africa,6871000
+Liechtenstein,LIE,Europe,38000000
+Lithuania,LTU,Europe,2722000
+Luxembourg,LUX,Europe,626000000
+Macau,MAC,Asia,649000000
+North Macedonia,MKD,Europe,2083000
+Madagascar,MDG,Africa,27691000
+Malawi,MWI,Africa,19130000
+Malaysia,MYS,Asia,32366000
+Maldives,MDV,Asia,541000000
+Mali,MLI,Africa,20251000
+Malta,MLT,Europe,442000000
+Marshall Islands,MHL,Oceania,59000000
+Mauritania,MRT,Africa,4650000
+Mauritius,MUS,Africa,1272000
+Mexico,MEX,North America,128933000
+"Micronesia, Federated States of",FSM,Oceania,115000000
+Moldova,MDA,Europe,4034000
+Monaco,MCO,Europe,39000000
+Mongolia,MNG,Asia,3278000
+Montenegro,MNE,Europe,628000000
+Morocco,MAR,Africa,36911000
+Mozambique,MOZ,Africa,31255000
+Namibia,NAM,Africa,2541000
+Nepal,NPL,Asia,29137000
+Netherlands,NLD,Europe,17135000
+New Caledonia,NCL,Oceania,285000000
+New Zealand,NZL,Oceania,4822000
+Nicaragua,NIC,North America,6625000
+Nigeria,NGA,Africa,206140000
+Niger,NER,Africa,24207000
+Niue,NIU,Oceania,2000000
+Northern Mariana Islands,MNP,Oceania,58000000
+Norway,NOR,Europe,5421000
+Oman,OMN,Asia,5107000
+Pakistan,PAK,Asia,220892000
+Palau,PLW,Oceania,18000000
+Panama,PAN,North America,4315000
+Papua New Guinea,PNG,Oceania,8947000
+Paraguay,PRY,South America,7133000
+Peru,PER,South America,32972000
+Philippines,PHL,Asia,109581000
+Poland,POL,Europe,37847000
+Portugal,PRT,Europe,10197000
+Puerto Rico,PRI,North America,2861000
+Qatar,QAT,Asia,2881000
+Romania,ROU,Europe,19238000
+Russia,RUS,Europe,145934000
+Rwanda,RWA,Africa,12952000
+Saint Kitts and Nevis,KNA,North America,53000000
+Saint Lucia,LCA,North America,184000000
+Saint Martin,MAF,North America,39000000
+Saint Pierre and Miquelon,SPM,North America,6000000
+Saint Vincent and the Grenadines,VCT,North America,111000000
+Samoa,WSM,Oceania,198000000
+San Marino,SMR,Europe,34000000
+Sao Tome and Principe,STP,Africa,219000000
+Saudi Arabia,SAU,Asia,34814000
+Senegal,SEN,Africa,16744000
+Serbia,SRB,Europe,8737000
+Seychelles,SYC,Africa,98000000
+Sierra Leone,SLE,Africa,7977000
+Singapore,SGP,Asia,5850000
+Sint Maarten,SXM,North America,43000000
+Slovakia,SVK,Europe,5460000
+Slovenia,SVN,Europe,2079000
+Solomon Islands,SLB,Oceania,687000000
+Somalia,SOM,Africa,15893000
+South Africa,ZAF,Africa,59309000
+South Sudan,SSD,Africa,11194000
+Spain,ESP,Europe,46755000
+Sri Lanka,LKA,Asia,21413000
+Sudan,SDN,Africa,43849000
+Suriname,SUR,South America,587000000
+Eswatini,SWZ,Africa,1160000
+Sweden,SWE,Europe,10099000
+Switzerland,CHE,Europe,8655000
+Syria,SYR,Asia,17501000
+Taiwan*,TWN,Asia,23817000
+Tajikistan,TJK,Asia,9538000
+Tanzania,TZA,Africa,59734000
+Thailand,THA,Asia,69800000
+Timor-Leste,TLS,Asia,1318000
+Togo,TGO,Africa,8279000
+Tonga,TON,Oceania,106000000
+Trinidad and Tobago,TTO,North America,1399000
+Tunisia,TUN,Africa,11819000
+Turkey,TUR,Europe,84339000
+Turkmenistan,TKM,Asia,6031000
+Tuvalu,TUV,Oceania,12000000
+Uganda,UGA,Africa,45741000
+Ukraine,UKR,Europe,43734000
+United Arab Emirates,ARE,Asia,9890000
+United Kingdom,GBR,Europe,67886000
+US,USA,North America,331003000
+Uruguay,URY,South America,3474000
+Uzbekistan,UZB,Asia,33469000
+Vanuatu,VUT,Oceania,307000000
+Venezuela,VEN,South America,28436000
+Vietnam,VNM,Asia,97339000
+Virgin Islands,VGB,North America,106977
+West Bank and Gaza,WBG,Africa,5156143
+Yemen,YEM,Asia,29826000
+Zambia,ZMB,Africa,18384000
+Zimbabwe,ZWE,Africa,14863000
