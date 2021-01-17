@@ -44,6 +44,7 @@ clean_data:
 html:
 	#rm -f ./www/plots/*.png
 	#cp target/*.png www/plots/
+	php greece.php > ./www/greece.html
 	php fatality.php > ./www/fatality.html
 	php confirmed.php > ./www/confirmed.html
 	php deaths.php > ./www/deaths.html

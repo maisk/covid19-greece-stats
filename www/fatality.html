@@ -38,6 +38,9 @@
 
 
 
+<div class="return_link">
+  <a  href="/content/covid-19">[επιστροφή]</a>
+</div>
 
 
 <script src="covid.js"></script>
