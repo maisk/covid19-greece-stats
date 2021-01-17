@@ -36,6 +36,10 @@ clean_data:
 html: *.png
 	rm -f ./www/plots/*.png
 	cp *.png www/plots/
+	php fatality.php > ./www/fatality.html
+	php confirmed.php > ./www/confirmed.html
+	php deaths.php > ./www/deaths.html
+	php article.php > ./www/article.html
 
 deploy:
 	./deploy.sh
