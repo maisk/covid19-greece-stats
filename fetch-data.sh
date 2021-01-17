@@ -1,5 +1,5 @@
 #!/bin/bash
-RCOVID_HOME=/home/kostas/workspace/covid
+RCOVID_HOME=$(pwd)
 RCOVID_DATA_HOME=${RCOVID_HOME}/data/covid
 BASE_URL="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
 

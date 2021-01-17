@@ -1,10 +1,12 @@
 
-.PHONY: help fetch data clean clean_data run html
+.PHONY: help fetch data clean clean_data run html init all
 
 help:
 	@echo ""
 	@echo "-----------------------------------------------"
 	@echo " targets:"
+	@echo " all            :"
+	@echo " init           :"
 	@echo " fetch          :"
 	@echo " data           :"
 	@echo " clean_data     :"
@@ -14,6 +16,12 @@ help:
 	@echo "-----------------"
 	@echo "html"
 
+all: init fetch data run html
+
+init:
+	mkdir -p ./www/plots/
+	mkdir -p ./data/covid/
+	@if [ ! -L target ];then ln -s ./www/plots target; fi
 
 fetch:
 	./fetch-data.sh
@@ -28,18 +36,19 @@ run: clean
 	Rscript covid2.R
 
 clean: 
-	@rm -f *.png
+	@rm -f www/plots/*.png
 
 clean_data:
 	@rm -f covid_data.Rdata
 
-html: *.png
-	rm -f ./www/plots/*.png
-	cp *.png www/plots/
+html:
+	#rm -f ./www/plots/*.png
+	#cp target/*.png www/plots/
 	php fatality.php > ./www/fatality.html
 	php confirmed.php > ./www/confirmed.html
 	php deaths.php > ./www/deaths.html
 	php article.php > ./www/article.html
+
 
 deploy:
 	./deploy.sh

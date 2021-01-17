@@ -37,10 +37,14 @@
 </div>
 
 
-
-
+<div class="return_link">
+  <a  href="/content/covid-19">[επιστορφή]</a>
+</div>
 
 <script src="covid.js"></script>
+
+
+
 
 
 

@@ -50,4 +50,4 @@ deploy.sh
 *.png
 .idea
 covid_data.Rdata
-
+/target

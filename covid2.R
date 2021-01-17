@@ -78,16 +78,17 @@ plot1 <- function(var_name, fname,title, country,color,max_default=0){
   }
   cat("max:",maxv,"\n")
   clen = length(country);
-  png(file=fname,width=width1,height=height1)
+  fname_f <- paste('target','/',fname, sep='' )
+  png(file=fname_f,width=width1,height=height1)
 
   c <-0;
   for (i in country){
     c <- c +1;
     if (c == 1){
       plot(covid[[i]]$date, covid[[i]][[var_name]],col=color[c],
-           cex=1.6, main=title,xlab='time',ylab=title, type="l", ylim=c(0,maxv))
+           lwd=1.3, cex=1.6, cex.lab=1.6, cex.main=1.6, cex.sub=1.6, cex.axis=1.6, main=title,xlab='time',ylab=title, type="l", ylim=c(0,maxv))
     } else {
-      lines(covid[[i]]$date, covid[[i]][[var_name]],col=color[c])    
+      lines(lwd=1.3, covid[[i]]$date, covid[[i]][[var_name]],col=color[c])    
     }
   }
   legend(x="topleft",
@@ -95,7 +96,7 @@ plot1 <- function(var_name, fname,title, country,color,max_default=0){
          col=color,
          lty=1,
          pch=NA ,
-         cex=1,5)
+         cex=1.8)
   grid()
   dev.off()
 }
