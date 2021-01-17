@@ -8,6 +8,9 @@ date -u  "+%Y-%m-%d %H:%M:%S%z"  > "${RCOVID_DATA_HOME}/fetch.log"
 
 
 function fetch {
+  if [[ -f "${RCOVID_DATA_HOME}/${1}" ]]; then
+    cp "${RCOVID_DATA_HOME}/${1}" "${RCOVID_DATA_HOME}/${1}.bak"
+  fi
 	curl "${BASE_URL}${1}" >  "${RCOVID_DATA_HOME}/${1}"
 }
 
