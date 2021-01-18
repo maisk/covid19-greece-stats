@@ -18,7 +18,7 @@ WINDOWS_SIZE=7
 
 width1=1100
 height1=600
-countries <-c('greece','sweden','italy','serbia','croatia','bosnia','bulgaria','belgium','albania','romania');
+countries <-c('greece','sweden','italy','serbia','croatia','bosnia','bulgaria','belgium','albania','romania','spain','portugal');
 #cidx <- function(cname){
 #  match(cname,countries);
 #}
@@ -35,6 +35,8 @@ population['bulgaria']<-6948445 #worldometers2020
 population['belgium']<-11589623  #worldometers2020
 population['albania']<-2877797  #worldometers2020
 population['romania']<-19237691  #worldometers2020
+population['spain']<-46754778   #worldometers2020
+population['portugal']<-10196709 #worldometers2020
 
 
 #'greece','sweden','italy','serbia','croatia','bosnia','bulgaria'
@@ -48,7 +50,9 @@ covid_all[covid_all$country.region%in%"Bosnia and Herzegovina",],
 covid_all[covid_all$country.region%in%"Bulgaria",],
 covid_all[covid_all$country.region%in%"Belgium",],
 covid_all[covid_all$country.region%in%"Albania",],
-covid_all[covid_all$country.region%in%"Romania",]
+covid_all[covid_all$country.region%in%"Romania",],
+covid_all[covid_all$country.region%in%"Spain",],
+covid_all[covid_all$country.region%in%"Portugal",]
 );
 names(covid)<- countries;
 #summary(covid)
@@ -213,11 +217,13 @@ plot_colors3<-c('black','green','orange')
 plot_countries4<-c('greece','romania','albania')
 plot_colors4<-c('black','green','orange')
 
-  
+plot_countries5<-c('greece','spain','portugal')
+plot_colors5<-c('black','green','orange')
+
 #################################################
 ## DEATHS RATE
 #################################################
-title<-'deaths %'
+title<-'θάνατοι %'
 plot_var<-'deaths_r';
 
 #plot_fname<-'covid_deaths'
@@ -230,6 +236,8 @@ plot_fname<-'covid_deaths_gbb'
 plot1(plot_var,plot_fname,title,plot_countries3,plot_colors3)
 plot_fname<-'covid_deaths_gar'
 plot1(plot_var,plot_fname,title,plot_countries4,plot_colors4)
+plot_fname<-'covid_deaths_gsp'
+plot1(plot_var,plot_fname,title,plot_countries5,plot_colors5)
 #################################################
 
 
@@ -249,6 +257,8 @@ plot_fname<-'covid_fatality_gbb'
 plot1(plot_var,plot_fname,title,plot_countries3,plot_colors3,6.7)
 plot_fname<-'covid_fatality_gar'
 plot1(plot_var,plot_fname,title,plot_countries4,plot_colors4)
+plot_fname<-'covid_fatality_gsp'
+plot1(plot_var,plot_fname,title,plot_countries5,plot_colors5)
 #################################################
 
 
@@ -268,6 +278,8 @@ plot_fname<-'covid_confirmed_gbb'
 plot1(plot_var,plot_fname,title,plot_countries3,plot_colors3)
 plot_fname<-'covid_confirmed_gar'
 plot1(plot_var,plot_fname,title,plot_countries4,plot_colors4)
+plot_fname<-'covid_confirmed_gsp'
+plot1(plot_var,plot_fname,title,plot_countries5,plot_colors5)
 #################################################3
 
 

@@ -34,6 +34,13 @@
   <a href="plots/covid_fatality_gar.png"><img class="plots" src="plots/covid_fatality_gar.png"/></a>
 
 
+  <h2>Ελλάδα, Ισπανία, Πορτογαλία</h2>
+  <a  href="plots/covid_fatality_gsp.png" class="plots"><img class="plots" src="plots/covid_fatality_gsp.png"/></a>
+  <br/>
+  <a href="plots/covid_fatality_gsp_w.png" class="plots"><img  class="plots" src="plots/covid_fatality_gsp_w.png"/></a>
+
+
+
 </div>
 
 
