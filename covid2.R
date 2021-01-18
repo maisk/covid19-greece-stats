@@ -75,7 +75,8 @@ fn_roll1 <- function(w){
     j = i-1;
     r[j]<- w[i]-w[j];
   }
-  return (sum(r)/(len-1))
+  #return (sum(r)/(len-1))
+  return (sum(r))
 }
 
 fn_roll2 <- function(w){
@@ -104,9 +105,9 @@ covid_greece$deaths     <- covid[['greece']]$deaths
 covid_greece$fatality_r   <- covid[['greece']]$fatality_r
 covid_greece$confirmed  <- covid[['greece']]$confirmed
 #covid_greece_w<-list();
-covid_greece$w_deaths     <-   rollapply(covid[['greece']]$deaths,3,fn_roll1)
-covid_greece$w_confirmed  <-    rollapply(covid[['greece']]$confirmed,3,fn_roll1)
-covid_greece$w_date  <-    rollapply(covid[['greece']]$date,3,fn_roll2)
+covid_greece$w_deaths     <-   rollapply(covid[['greece']]$deaths,2,fn_roll1)
+covid_greece$w_confirmed  <-    rollapply(covid[['greece']]$confirmed,2,fn_roll1)
+covid_greece$w_date  <-    rollapply(covid[['greece']]$date,2,fn_roll2)
 
 #names(covid_w)
 #names(covid_w[['greece']])
@@ -134,6 +135,7 @@ plot1 <- function(var_name, fname,title, country,color,max_default=0){
   fname_f <- paste('target','/',fname,'.png', sep='' )
   png(file=fname_f,width=width1,height=height1)
 
+  main_title <- paste(title,'απο την αρχή της πανδημίας' )
   c <-0;
   for (i in country){
     c <- c +1;
@@ -143,7 +145,7 @@ plot1 <- function(var_name, fname,title, country,color,max_default=0){
     #}
     if (c == 1){
       plot(dates, covid[[i]][[var_name]],col=color[c],
-           lwd=1.3, cex=1.6, cex.lab=1.6, cex.main=1.6, cex.sub=1.6, cex.axis=1.6, main=title,xlab='time',ylab=title, type="l", ylim=c(0,maxv))
+           lwd=1.3, cex=1.6, cex.lab=1.6, cex.main=1.6, cex.sub=1.6, cex.axis=1.6, main=main_title,xlab='time',ylab=title, type="l", ylim=c(0,maxv))
     } else {
       lines(lwd=1.3, dates, covid[[i]][[var_name]],col=color[c])    
     }
@@ -168,7 +170,7 @@ plot1 <- function(var_name, fname,title, country,color,max_default=0){
   
   fname_f <- paste('target','/',fname,'_w.png', sep='' )
   png(file=fname_f,width=width1,height=height1)
-  title = paste(title,'mean for ', WINDOWS_SIZE, ' days')
+  title = paste(title,' Ανα βδομάδα')
   c <-0;
   for (i in country){
     c <- c +1;
@@ -253,7 +255,7 @@ plot1(plot_var,plot_fname,title,plot_countries4,plot_colors4)
 #################################################
 ## CONFIRMED RATE
 #################################################
-title<-'confirmed %'
+title<-'Επιβεβαιωμένα κρούσματα %'
 plot_var<-'confirmed_r';
 
 #plot_fname<-'covid_confirmed'
@@ -271,8 +273,8 @@ plot1(plot_var,plot_fname,title,plot_countries4,plot_colors4)
 
 
 
-main_title<-'Greece deaths'
-y_title<-'deaths'
+main_title<-'Ελλάδα θάνατοι απο την αρχή της πανδημίας'
+y_title<-'θάνατοι'
 png(file='target/covid_greece_deaths.png',width=width1,height=height1)
 plot(covid_greece$date, covid_greece$deaths, col='black',
      lwd=1.3, cex=1.6, cex.lab=1.6, cex.main=1.6, cex.sub=1.6, cex.axis=1.6, main=main_title,xlab='time',ylab=y_title, type="l")
@@ -290,7 +292,7 @@ grid()
 dev.off()
 
 
-main_title<-'Greece confirmed'
+main_title<-'Ελλάδα επιβεβαιωμένα κρούσματα απο την αρχή της πανδημίας'
 y_title<-'confirmed'
 png(file='target/covid_greece_confirmed.png',width=width1,height=height1)
 plot(covid_greece$date, covid_greece$confirmed, col='black',
@@ -301,7 +303,7 @@ dev.off()
 
 wdates <- base::as.Date(zoo::as.Date(covid_greece$w_date))
 
-main_title<-'Greece confirmed mean for 2 days'
+main_title<-'Ελλάδα επιβεβαιωμένα κρούσματα ανα ημέρα'
 y_title<-'confirmed'
 png(file='target/covid_greece_confirmed_w.png',width=width1,height=height1)
 plot(wdates, covid_greece$w_confirmed, col='black',
@@ -309,7 +311,7 @@ plot(wdates, covid_greece$w_confirmed, col='black',
 grid()
 dev.off()
 
-main_title<-'Greece deaths mean for 2 days'
+main_title<-'Ελλάδα θανάτοι ανα ημέρα'
 y_title<-'deaths'
 png(file='target/covid_greece_deaths_w.png',width=width1,height=height1)
 plot(wdates, covid_greece$w_deaths, col='black',

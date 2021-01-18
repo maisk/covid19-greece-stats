@@ -20,7 +20,7 @@
   <h1>COVID-19 Greece Statistics</h1>
 
   <p class="desc">
-    confirmed Cases:  επιβεβαιωμένα κρούσματα εκφρασμένα σε ποσοστά επί τοις εκατό του πληθυσμού της κάθε χώρας
+    confirmed Cases:  επιβεβαιωμένα κρούσματα
   </p>
   <a href="plots/covid_greece_confirmed.png" class="plots"><img  class="plots" src="plots/covid_greece_confirmed.png"/></a>
   <br/>
@@ -28,7 +28,7 @@
 
 
   <p class="desc">
-    Deaths:  επιβεβαιωμένοι θάνατοι από covid εκφρασμένα σε ποσοστά επί τοις εκατό του πληθυσμού της κάθε χώρας
+    Deaths:  επιβεβαιωμένοι θάνατοι από covid
   </p>
   <a href="plots/covid_greece_deaths.png" class="plots"><img  class="plots" src="plots/covid_greece_deaths.png"/></a>
   <br/>
@@ -36,7 +36,7 @@
 
 
   <p class="desc">
-    Fatality Rate:  θάνατοι απο covid προς επιβεβαιωμένα κρούσματα  εκφρασμένα σε ποσοστά επί τοις εκατό
+    Fatality Rate: ο λόγος των θανάτων προς τα covid επιβεβαιωμένα κρούσματα εκφρασμένος ως ποσοστό επί τοις εκατό
   </p>
   <a href="plots/covid_greece_fatality.png" class="plots"><img  class="plots" src="plots/covid_greece_fatality.png"/></a>
 
