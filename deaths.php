@@ -20,10 +20,18 @@
 <br/>
 
 
-<h2>Ελλάδα, Σουηδία, Ιταλία, Βέλγιο</h2>
-<a href="plots/covid_deaths_gsi.png" class="plots"><img  class="plots" src="plots/covid_deaths_gsi.png"/></a>
+  <!--<h2>Ελλάδα, Σουηδία, Ιταλία, Βέλγιο  Kροατία, Σερβία</h2>-->
+
+<h2>Ελλάδα, Ιταλία,Γαλλία</h2>
+<a href="plots/covid_deaths_gif.png" class="plots"><img  class="plots" src="plots/covid_deaths_gif.png"/></a>
 <br/>
-<a href="plots/covid_deaths_gsi_w.png" class="plots"><img  class="plots" src="plots/covid_deaths_gsi_w.png"/></a>
+<a href="plots/covid_deaths_gif_w.png" class="plots"><img  class="plots" src="plots/covid_deaths_gif_w.png"/></a>
+
+  <h2>Ελλάδα, Σουηδία, Ηνωμένο Βασίλειο (UK)</h2>
+  <a href="plots/covid_deaths_gus.png" class="plots"><img class="plots" src="plots/covid_deaths_gus.png"/></a>
+  <br/>
+  <a href="plots/covid_deaths_gus_w.png" class="plots"><img  class="plots" src="plots/covid_deaths_gus_w.png"/></a>
+
 
   <h2>Ελλάδα, Kροατία, Σερβία</h2>
   <a href="plots/covid_deaths_gcs.png" class="plots"><img class="plots" src="plots/covid_deaths_gcs.png"/></a>
