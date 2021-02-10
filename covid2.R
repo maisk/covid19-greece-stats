@@ -18,28 +18,32 @@ WINDOWS_SIZE=7
 
 width1=1100
 height1=600
-countries <-c('greece','sweden','italy','serbia','croatia','bosnia','bulgaria','belgium','albania','romania','spain','portugal');
+countries <-c('Greece','Sweden','Italy','Serbia','Croatia','Bosnia and Herzegovina','Bulgaria','Belgium','Albania','Romania','Spain','Portugal','United Kingdom','France');
 #cidx <- function(cname){
 #  match(cname,countries);
 #}
 
 #'greece','sweden','italy','serbia','croatia','bosnia','bulgaria','belgium'
 population <- list();
-population['sweden']<-10099265  #worldometers2020
-population['italy']<-60461826   #worldometers2020 
-population['greece']<-10423054  #worldometers2020
-population['serbia']<-8737371   #worldometers2020
-population['croatia']<-4105267  #worldometers2020
-population['bosnia']<-3280819   #worldometers2020
-population['bulgaria']<-6948445 #worldometers2020
-population['belgium']<-11589623  #worldometers2020
-population['albania']<-2877797  #worldometers2020
-population['romania']<-19237691  #worldometers2020
-population['spain']<-46754778   #worldometers2020
-population['portugal']<-10196709 #worldometers2020
+population['Sweden']<-10099265  #worldometers2020
+population['Italy']<-60461826   #worldometers2020 
+population['Greece']<-10423054  #worldometers2020
+population['Serbia']<-8737371   #worldometers2020
+population['Croatia']<-4105267  #worldometers2020
+population['Bosnia and Herzegovina']<-3280819   #worldometers2020
+population['Bulgaria']<-6948445 #worldometers2020
+population['Belgium']<-11589623  #worldometers2020
+population['Albania']<-2877797  #worldometers2020
+population['Romania']<-19237691  #worldometers2020
+population['Spain']<-46754778   #worldometers2020
+population['Portugal']<-10196709 #worldometers2020
+population['United Kingdom'] <- 67886011	 #worldometers2020
+population['France'] <- 65273511 #worldometers2020
 
 
 #'greece','sweden','italy','serbia','croatia','bosnia','bulgaria'
+eng_all <- covid_all[covid_all$country.region%in%"United Kingdom",];
+fra_all <- covid_all[covid_all$country.region%in%"France",]
 covid = list(
 covid_all[covid_all$country.region%in%"Greece",],
 covid_all[covid_all$country.region%in%"Sweden",],
@@ -52,10 +56,19 @@ covid_all[covid_all$country.region%in%"Belgium",],
 covid_all[covid_all$country.region%in%"Albania",],
 covid_all[covid_all$country.region%in%"Romania",],
 covid_all[covid_all$country.region%in%"Spain",],
-covid_all[covid_all$country.region%in%"Portugal",]
+covid_all[covid_all$country.region%in%"Portugal",],
+eng_all[eng_all$province.state%in%"",],
+fra_all[fra_all$province.state%in%"",]
+#covid_all[covid_all$country.region%in%"France",]
 );
 names(covid)<- countries;
 #summary(covid)
+
+#counties_all<-unique(covid_all$country.region)
+
+
+#eng1=covid_all[covid_all$country.region%in%"United Kingdom",] ; 
+#eng2<-eng1[eng1$province.state%in%"",]
 
 
 #covid[['greece']]$confirmed
@@ -104,14 +117,14 @@ for (i in countries){
 }
 
 covid_greece<-list();
-covid_greece$date       <- covid[['greece']]$date
-covid_greece$deaths     <- covid[['greece']]$deaths 
-covid_greece$fatality_r   <- covid[['greece']]$fatality_r
-covid_greece$confirmed  <- covid[['greece']]$confirmed
+covid_greece$date       <- covid[['Greece']]$date
+covid_greece$deaths     <- covid[['Greece']]$deaths 
+covid_greece$fatality_r   <- covid[['Greece']]$fatality_r
+covid_greece$confirmed  <- covid[['Greece']]$confirmed
 #covid_greece_w<-list();
-covid_greece$w_deaths     <-   rollapply(covid[['greece']]$deaths,2,fn_roll1)
-covid_greece$w_confirmed  <-    rollapply(covid[['greece']]$confirmed,2,fn_roll1)
-covid_greece$w_date  <-    rollapply(covid[['greece']]$date,2,fn_roll2)
+covid_greece$w_deaths     <-   rollapply(covid[['Greece']]$deaths,2,fn_roll1)
+covid_greece$w_confirmed  <-    rollapply(covid[['Greece']]$confirmed,2,fn_roll1)
+covid_greece$w_date  <-    rollapply(covid[['Greece']]$date,2,fn_roll2)
 
 #names(covid_w)
 #names(covid_w[['greece']])
@@ -201,23 +214,26 @@ plot1 <- function(var_name, fname,title, country,color,max_default=0){
 
 
 
-plot_countries0<-c('greece')
+plot_countries0<-c('Greece')
 plot_colors0<-c('black')
 
 
-plot_countries1<-c('greece','sweden','italy','belgium')
-plot_colors1<-c('black','blue','red','green')
+plot_countries1<-c('Greece','Italy','France')
+plot_colors1<-c('black','blue','red')
 
-plot_countries2<-c('greece','croatia','serbia')
+plot_countries1a<-c('Greece','Sweden','United Kingdom')
+plot_colors1a<-c('black','blue','red')
+
+plot_countries2<-c('Greece','Croatia','Serbia')
 plot_colors2<-c('black','blue','red')
 
-plot_countries3<-c('greece','bulgaria','bosnia')
+plot_countries3<-c('Greece','Bulgaria','Bosnia and Herzegovina')
 plot_colors3<-c('black','green','orange')
 
-plot_countries4<-c('greece','romania','albania')
+plot_countries4<-c('Greece','Romania','Albania')
 plot_colors4<-c('black','green','orange')
 
-plot_countries5<-c('greece','spain','portugal')
+plot_countries5<-c('Greece','Spain','Portugal')
 plot_colors5<-c('black','green','orange')
 
 #################################################
@@ -228,8 +244,10 @@ plot_var<-'deaths_r';
 
 #plot_fname<-'covid_deaths'
 #plot1(plot_var,plot_fname,title,plot_countries0,plot_colors0)
-plot_fname<-'covid_deaths_gsi'
+plot_fname<-'covid_deaths_gif'
 plot1(plot_var,plot_fname,title,plot_countries1,plot_colors1)
+plot_fname<-'covid_deaths_gus'
+plot1(plot_var,plot_fname,title,plot_countries1a,plot_colors1a)
 plot_fname<-'covid_deaths_gcs'
 plot1(plot_var,plot_fname,title,plot_countries2,plot_colors2)
 plot_fname<-'covid_deaths_gbb'
@@ -249,8 +267,10 @@ plot_var<-'fatality_r';
 
 #plot_fname<-'covid_fatality'
 #plot1(plot_var,plot_fname,title,plot_countries0,plot_colors0)
-plot_fname<-'covid_fatality_gsi'
+plot_fname<-'covid_fatality_gif'
 plot1(plot_var,plot_fname,title,plot_countries1,plot_colors1)
+plot_fname<-'covid_fatality_gus'
+plot1(plot_var,plot_fname,title,plot_countries1a,plot_colors1a)
 plot_fname<-'covid_fatality_gcs'
 plot1(plot_var,plot_fname,title,plot_countries2,plot_colors2)
 plot_fname<-'covid_fatality_gbb'
@@ -270,8 +290,10 @@ plot_var<-'confirmed_r';
 
 #plot_fname<-'covid_confirmed'
 #plot1(plot_var,plot_fname,title,plot_countries0,plot_colors0)
-plot_fname<-'covid_confirmed_gsi'
+plot_fname<-'covid_confirmed_gif'
 plot1(plot_var,plot_fname,title,plot_countries1,plot_colors1)
+plot_fname<-'covid_confirmed_gus'
+plot1(plot_var,plot_fname,title,plot_countries1a,plot_colors1a)
 plot_fname<-'covid_confirmed_gcs'
 plot1(plot_var,plot_fname,title,plot_countries2,plot_colors2)
 plot_fname<-'covid_confirmed_gbb'
@@ -332,4 +354,10 @@ grid()
 dev.off()
 
 
- 
+
+
+
+
+
+
+
