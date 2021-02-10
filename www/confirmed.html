@@ -22,15 +22,15 @@
 <br/>
 <br/>
 
-<h2>Ελλάδα, Σουηδία, Ιταλία, Βέλγιο</h2>
-<a href="plots/covid_confirmed_gsi.png"><img  class="plots" src="plots/covid_confirmed_gsi.png"/></a>
+  <h2>Ελλάδα, Ιταλία,Γαλλία</h2>
+<a href="plots/covid_confirmed_gif.png"><img  class="plots" src="plots/covid_confirmed_gif.png"/></a>
 <br/>
- <a href="plots/covid_confirmed_gsi_w.png"><img  class="plots" src="plots/covid_confirmed_gsi_w.png"/></a>
+ <a href="plots/covid_confirmed_gif_w.png"><img  class="plots" src="plots/covid_confirmed_gif_w.png"/></a>
 
-  <h2>Ελλάδα, Kροατία, Σερβία</h2>
-  <a href="plots/covid_confirmed_gcs.png"><img class="plots" src="plots/covid_confirmed_gcs.png"/></a>
+  <h2>Ελλάδα, Σουηδία, Ηνωμένο Βασίλειο (UK)</h2>
+  <a href="plots/covid_confirmed_gus.png"><img class="plots" src="plots/covid_confirmed_gus.png"/></a>
   <br/>
-  <a href="plots/covid_confirmed_gcs_w.png"><img class="plots" src="plots/covid_confirmed_gcs_w.png"/></a>
+  <a href="plots/covid_confirmed_gus_w.png"><img class="plots" src="plots/covid_confirmed_gus_w.png"/></a>
 
   <h2>Ελλάδα, Βουλγαρία, Βοσνία και Ερζεγοβίνη</h2>
   <a href="plots/covid_confirmed_gbb.png"><img class="plots" src="plots/covid_confirmed_gbb.png"/></a>

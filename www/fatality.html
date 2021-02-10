@@ -20,9 +20,12 @@
   <br/>
   <br/>
 
-  <h2>Ελλάδα, Σουηδία, Ιταλία, Βέλγιο</h2>
+  <h2>Ελλάδα, Ιταλία,Γαλλία</h2>
+  <a href="plots/covid_fatality_gif.png"><img  class="plots" src="plots/covid_fatality_gif.png"/></a>
 
-  <a href="plots/covid_fatality_gsi.png"><img  class="plots" src="plots/covid_fatality_gsi.png"/></a>
+
+  <h2>Ελλάδα, Σουηδία, Ηνωμένο Βασίλειο (UK)</h2>
+  <a href="plots/covid_fatality_gus.png"><img class="plots" src="plots/covid_fatality_gus.png"/></a>
 
   <h2>Ελλάδα, Kροατία, Σερβία</h2>
   <a href="plots/covid_fatality_gcs.png"><img class="plots" src="plots/covid_fatality_gcs.png"/></a>
@@ -33,11 +36,8 @@
   <h2>Ελλάδα, Αλβανiα, Ρουμανία</h2>
   <a href="plots/covid_fatality_gar.png"><img class="plots" src="plots/covid_fatality_gar.png"/></a>
 
-
   <h2>Ελλάδα, Ισπανία, Πορτογαλία</h2>
   <a  href="plots/covid_fatality_gsp.png" class="plots"><img class="plots" src="plots/covid_fatality_gsp.png"/></a>
-  <br/>
-  <a href="plots/covid_fatality_gsp_w.png" class="plots"><img  class="plots" src="plots/covid_fatality_gsp_w.png"/></a>
 
 
 
